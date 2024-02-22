@@ -14,11 +14,16 @@ body {
 }
 
 .container {
-  max-width: 430px;
-  height: 610px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 430px;
   background-color: white;
   border-radius: 20px;
-  margin: 50px auto;
   text-align: center;
   box-shadow: 0 10px 45px -30px hsl(245, 75%, 52%);
 }
@@ -26,19 +31,20 @@ body {
 .image_con img {
   max-width: 100%;
   border-radius: 15px 15px 0 0;
+  display: inherit;
 }
 
 .summary_con {
   margin: 25px 0;
 }
 
-h2 {
+.summary_con h2 {
   font-weight: 900;
   font-size: 24px;
   color: hsl(223, 47%, 23%);
 }
 
-p {
+.summary_con p {
   font-size: 16px;
   font-weight: 500;
   color: hsl(224, 23%, 55%);
